@@ -85,3 +85,24 @@ a:active{
 a:visited{
     color:yellow;
 }
+.my-form{
+    padding:15px;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+.my-form label{
+    display:block;
+}
+.my-form input[type="text"], .my-form textarea, .my-form .email{
+ padding :8px;
+ width:100%;
+}
+
+.button{
+    background-color: #333;
+    color:#fff;
+    border:none;
+    padding:10px 15px;
+}
