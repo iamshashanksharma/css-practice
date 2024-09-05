@@ -41,6 +41,9 @@ body{
     width:80%;
     margin:auto;
 }
+.clr{
+    clear:both;
+}
 .box1 h1{
     font-weight: 800;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -105,4 +108,27 @@ a:visited{
     color:#fff;
     border:none;
     padding:10px 15px;
+}
+
+.block{
+    float: left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width:70%;
+    margin-top:10px;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background-color: #ccc;
+    padding:15px;
+    box-sizing: border-box;
+    margin-top:10px;
 }
