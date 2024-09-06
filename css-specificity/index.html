@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- specificity
+     (0,0,0,0) - (inline , id , class , type) 
+    -->
+    <style>
+        /*(0,1,0,0)*/
+     /*   #header-id{    why this is applied because id are more specific 
+            color:aqua;
+        }  */
+
+        /*(0,0,1,0)*/
+        
+        .header{
+            color:orange;
+        }
+        /*(0,0,1,0) */
+        .header-2{  /*Why it is changed because specificity of both classes same and it comes later css works from top to bottom */
+            color:green;
+        }
+        /*(0,0,0,1)*/
+        h1{
+            color:red;
+        }
+        /*(0,0,1,0)*/
+        .text{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header-id" class="header header-2"> Header</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         Magni dolorem vel at porro iure totam, aliquam voluptatum quas a esse, 
+         provident veritatis optio.Cupiditate eum sunt unde enim, dolorem nisi!</p>
+</body>
+</html>
