@@ -1,0 +1,21 @@
+body{
+    color: #414141;
+    background-color:#EEEEEE;
+    font-size:18px;
+}
+
+h1{
+    font-size:2em;
+    font-weight:bolder;
+}
+h2{
+    font-size:1.6em;
+}
+a{
+    text-decoration:underline;
+}
+p{
+/*  text-align:right;  */
+   font-weight:bold;
+    font-style:italic;
+}
