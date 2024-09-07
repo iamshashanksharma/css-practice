@@ -1,0 +1,30 @@
+/*By default position:static which means it obeys document flow like child one comes first then child two comes */
+/*Relative positioning is same as static positioning but it has top,down,bottom,right which sets relative to static */
+
+.parent{
+background-color: blue;
+position:relative;
+height:200vh;
+}
+.child-1{
+    background-color:green;
+    /* 
+    position:relative;
+    left:5px;
+    This is generally not used because it breaks the document flow 
+    */
+    position:absolute; 
+    top:5px;  /*If you didnot set parent position relative it would have positioned itself accordign to browserwindow because it looks for the parent element but not static positioned */
+    left:100px;
+}
+.child-2{
+    background-color:orange;
+    position:fixed; /*It is positioned fixed according to entire html it doesnot have to do anything with parent */
+    top:0px; /*It remains fixed even if we scroll */
+
+}
+.child-3{
+    background-color:pink;
+    position:sticky;
+    top:0px; /*comb of relative and fixed when the top hits 0px it gets fixed while scrolling */
+}
