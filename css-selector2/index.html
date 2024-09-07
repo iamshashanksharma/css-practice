@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*   .red{
+            background-color:red;
+        } This changes background-color of li and div both because they both have same class red */
+      
+        div.red{
+        background-color:red; /*changes only div class because it selects div which have red class */
+      }
+   /*   span,div.orange{
+        background-color:orange; changes span and div which has orange class 
+      } */
+      ul li{
+        background-color:aqua; /*changes bg color of anything which is inside ul */
+      }
+      span > b{
+        background-color: pink; /*direct child selector */
+      }
+      
+
+      /*sibling selector */
+      
+
+      li.purple ~ li{  /*This selects all the sibling of li.purple */
+        background-color:brown;
+      }
+      li.purple+li{
+        background-color:chartreuse;  /*This selects the element just after li.purple */
+      }
+      /*pseudo-class elements */
+      li:first-child{
+        background-color:coral; /*first -child inside parent in this case ul */
+      } /*Different variants include second-child , nth child */
+      
+      
+    </style>
+</head>
+<body>
+    <div class="red">This is a div</div>
+    <span id="blue">This is a span</span>
+    <div class="orange">This is div 2</div>
+    <div>
+        <span>
+            <b>nested data</b>
+        </span>
+    </div>
+    <ul>
+        <li class="red">List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+        <li>List item 5</li>
+    </ul>
+    <ul>
+        <li class="purple">List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li class="green">List item 4</li>
+        <li>List item 5</li>
+    </ul>
+    
+</body>
+</html>
